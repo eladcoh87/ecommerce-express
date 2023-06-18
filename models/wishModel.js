@@ -3,7 +3,6 @@ import mongoose from 'mongoose';
 const product = mongoose.Schema({
 	productId: {
 		type: mongoose.Schema.Types.ObjectId,
-		unique: true,
 		ref:'Product'
 	},
 });
