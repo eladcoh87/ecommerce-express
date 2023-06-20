@@ -21,7 +21,7 @@ export const registerUser = AsyncHandler(async (req, res) => {
 
   if (userExsiset) {
     res.status(400);
-    throw new Error('user alredy exiset');
+    throw new Error('user already exist');
   }
 
   const salt = await bcryptjs.genSalt(10);
